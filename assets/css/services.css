@@ -1,0 +1,10 @@
+/* List Services  */
+.sv_list {
+}
+
+.sv_list .sv_item {
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 80px;
+  margin-top: 80px;
+  align-items: center;
+}

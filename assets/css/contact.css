@@ -1,0 +1,95 @@
+.ct_find .ct_form {
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+.ct_find .ct_left {
+  width: 20px;
+}
+
+.ct_find .ct_info {
+  display: grid;
+  grid-template-columns: 20px auto;
+  gap: 20px;
+  row-gap: 2.5rem;
+}
+
+.ct_find .ct_left i {
+  font-size: 22px;
+  display: block;
+  margin-top: 3px;
+  color: var(--primary-color);
+}
+
+.ct_find .ct_right h6 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+
+.ct_find .ct_right p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #777;
+  margin-top: 3px;
+}
+
+.ct_find .ct_right p a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #777;
+  margin-top: 3px;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.ct_find .ct_right p a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+  color: var(--primary-color);
+}
+
+.ct_find form input,
+.ct_find form textarea {
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  color: var(--font-color);
+  padding: 0px 16px;
+  border: 1px solid var(--bg-light);
+  background: var(--bg-light);
+  border-radius: 6px;
+  height: 55px;
+}
+
+.ct_find form textarea {
+  resize: none;
+  min-height: 140px;
+  padding: 12px 16px;
+}
+
+.ct_find form input::placeholder,
+.ct_find form textarea::placeholder {
+  color: var(--font-color);
+}
+
+.ct_find form input:focus,
+.ct_find form textarea:focus {
+  outline: none;
+  border: 1px solid var(--primary-color);
+  box-shadow: none;
+}
+
+@media (max-width: 992px) {
+  .ct_find .ct_form {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .ct_map iframe {
+    height: 200px;
+  }
+}
